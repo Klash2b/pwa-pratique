@@ -21,10 +21,20 @@ function loadTechnologies(technos) {
         .catch(console.error);
 }
 
+loadTechnologies(technos);
+
 if(navigator.serviceWorker) {
     navigator.serviceWorker
         .register('sw.js')
         .catch(err => console.error('service worker NON enregistré', err));
 }
 
-loadTechnologies(technos);
+// if(window.caches) {
+//     caches.open('veille-techno-1.0').then(cache => {
+//         cache.addAll([
+//             'index.html',
+//             'main.js',
+//             'vendors/bootstrap4.min.css'
+//         ]);
+//     });
+// } 
