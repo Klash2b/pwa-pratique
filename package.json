@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Klash2b/pwa-pratique/issues"
   },
-  "homepage": "https://github.com/Klash2b/pwa-pratique#readme"
+  "homepage": "https://github.com/Klash2b/pwa-pratique#readme",
+  "dependencies": {
+    "web-push": "^3.4.5"
+  }
 }
